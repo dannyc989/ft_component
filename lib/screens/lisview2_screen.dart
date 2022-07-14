@@ -11,7 +11,7 @@ class ListView2Screen extends StatelessWidget {
         appBar: AppBar(
           title: const Text('ListView Tipo 2'),
           elevation: 0,
-          backgroundColor: Colors.indigo,
+          // backgroundColor: Colors.indigo,
         ),
         body: ListView.separated(
             itemBuilder: (context, index) {
@@ -24,7 +24,6 @@ class ListView2Screen extends StatelessWidget {
                 title: Text(options[index]),
                 onTap: () {
                   final anime = options[index];
-                  print(anime);
                 },
               );
             },
